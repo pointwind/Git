@@ -1,1 +1,3 @@
-if you want more ,please tell me ,i will try to finish this.
+1.[开发流程](https://github.com/pointwind/Git/blob/master/git_flow.md)  
+2.[便携指令]()  
+3.[操作注意](https://github.com/pointwind/Git/blob/master/git_tips.md)
