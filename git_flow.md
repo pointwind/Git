@@ -26,3 +26,13 @@
 > $ git config --global pull.ff only                # 禁用非 --ff-only 的 pull 操作。
 
 > $ git config --global merge.ff only               # 禁用非 --ff-only 的 merge 操作。
+
+## 禁止事项
+1. 禁止直接在 master 分支上开发。  
+2. 禁止直接向 master 和 release/stable 分支 push。  
+3. 禁止 merge，--ff-only 除外。  
+4. 禁止 pull， --ff-only 和 --rebase 除外  。  
+5. 文本文件禁止使用宽字符编码，非手动编辑的文件除外。
+![image](https://github.com/lhmouse/git-workflow-zh/raw/master/workflow.jpg)
+
+## 开发流程
