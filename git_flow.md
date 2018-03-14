@@ -36,3 +36,35 @@
 ![image](https://github.com/lhmouse/git-workflow-zh/raw/master/workflow.jpg)
 
 ## 开发流程
+### 一般开发流程
+##### 获取 最新代码：  
+
+
+> $ git checkout master  
+> $ git fetch  
+> $ git reset --hard origin/master  
+
+##### 创建 用于开发的 本地分支   （此处假定用于开发的分支名为 working）：  
+>  $ git checkout -b working    
+
+##### 在 working 分支上 进行修改 。  提交修改 到 working 分支：  
+> $ git add 第一个文件  
+> $ git add 第二个文件  
+> $ git commit  
+
+##### 将本地分支 working 推送 到服务器上，创建一个新的 远端分支 origin/working：  
+> $ git push origin working  
+
+##### 在 GitLab 上查看推送的分支， 创建 到 master 分支的 Merge Request 。
+##### 查看新建的 Merge Request，如果没有冲突，点击 合并 。
+##### 再次 获取 最新的代码：  
+> $ git checkout master  
+> $ git pull --ff-only  
+
+##### 删除本地的 开发 分支 ：  
+> $ git branch -d working 
+
+##### 删除服务器上的 开发 分支 ：  
+> $ git push origin :working  
+
+
