@@ -25,4 +25,5 @@ Git merge  （在master中进行）。
 >Git rebase –onto branch1 branch2
 
 branch3(branch1为被移动到的分支，branch2为被忽略的分支，branch3为移动过去的)
-![image](https://github.com/pointwind/Git/blob/master/git_tips_rebase.png?raw=true)
+![image](https://github.com/pointwind/Git/blob/master/git_tips_rebase_1.png?raw=true)
+![image](https://github.com/pointwind/Git/blob/master/git_tips_rebase_2.png?raw=true)
