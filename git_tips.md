@@ -40,6 +40,12 @@ branch3(branch1为被移动到的分支，branch2为被忽略的分支，branch3
     git reset HEAD~
 #### 已经使用git commit但未push的文件如何修改上次的信息？
     git commit --amend -m "your new message"（保证没有其他change staged，否则也会被修改）
-###### 如果已经push了呢？
+###### >如果已经push了呢？
     git commit --amend -m "your new message"
     git push <remote> <branch> --force
+#### 使版本revert到以前的版本
+    git revert --no-commit 0766c053..HEAD
+    git commit
+#### 版本rollback
+    git checkout [revision].(revision是其oldcommit的hash，不要忘记 . )
+    
